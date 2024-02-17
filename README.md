@@ -22,8 +22,10 @@ This application allows users to explore locations from the Rick & Morty univers
 ### Prerequisites
 
 - Node.js and npm installed on your machine.
+  
+  #### Optional
 - Docker installed (optional, for containerization).
-- Kubernetes cluster configured and `kubectl` installed(optional).
+- Kubernetes cluster configured and `kubectl` installed.
 
 ### Installation
 
