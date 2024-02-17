@@ -30,19 +30,19 @@ This application allows users to explore locations from the Rick & Morty univers
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/fabulousDesigns/rick-and-morty-app.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repository
+   cd rick-and-morty-app
    ```
 
 3. Install dependencies:
 
    ```bash
-   npm install
+   npm i
    ```
 
 ### Running the Application
@@ -89,4 +89,4 @@ The application will be accessible through the Kubernetes service. Use `kubectl 
 
 ## Contact
 
-For any inquiries or support, please contact [designsfabulous8@gmail.com].
+For any inquiries or support, please contact designsfabulous8@gmail.com.
