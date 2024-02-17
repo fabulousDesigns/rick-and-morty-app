@@ -1,0 +1,64 @@
+.form__control {
+  width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  background: linear-gradient(145deg, var(--bg), var(--bg-variant));
+  box-shadow: 5px 5px 9px var(--bg-variant), -5px -5px 9px var(--bg-variant);
+  border: 2px solid #ccc;
+}
+
+.form__control:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+.form__control::placeholder {
+  color: var(--text);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.r__card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(145deg, var(--bg), var(--bg-variant));
+  box-shadow: 5px 5px 9px var(--bg-variant), -5px -5px 9px var(--bg-variant);
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text);
+  /* 
+  gap: 1rem;
+ 
+ 
+  height: 150px;
+   */
+}
+
+.resident__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prof__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 5px 5px 9px var(--bg-variant), -5px -5px 9px var(--bg-variant);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.prof__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

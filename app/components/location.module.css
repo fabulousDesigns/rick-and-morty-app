@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(145deg, var(--bg), var(--bg-variant));
+  box-shadow: 5px 5px 9px var(--bg-variant), -5px -5px 9px var(--bg-variant);
+}
+
+.btn__show__residents {
+  background: linear-gradient(145deg, var(--bg), var(--bg-variant));
+  box-shadow: 5px 5px 9px var(--bg-variant), -5px -5px 9px var(--bg-variant);
+  border: 2px solid #ccc;
+  color: var(--text);
+  padding: 3px 10px;
+  border-radius: 6px;
+  /* border: none; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
