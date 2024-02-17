@@ -19,8 +19,6 @@ This application allows users to explore locations from the Rick & Morty univers
 
 ## Getting Started
 
-I chose to use `localStorage` in this app because it offers a straightforward solution for storing data directly on the user's device. This decision was made with the intention of enhancing user experience by providing seamless access to features like saving notes about characters or preserving user preferences, all without the need for constant internet connectivity.
-
 ### Prerequisites
 
 - Node.js and npm installed on your machine.
