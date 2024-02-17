@@ -1,4 +1,4 @@
-# Rick & Morty Locations App
+# Rick & Morty App
 
 This application allows users to explore locations from the Rick & Morty universe and view details about each location and its residents.
 
