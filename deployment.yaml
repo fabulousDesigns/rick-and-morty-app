@@ -17,3 +17,4 @@ spec:
           image: zagadatpro10/rickandmorty:latest
           ports:
             - containerPort: 3000
+# zagadatpro10/rickandmorty:latest is the image that we pushed to Docker Hub

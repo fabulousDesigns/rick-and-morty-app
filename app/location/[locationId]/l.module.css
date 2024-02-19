@@ -1,11 +1,40 @@
 .resident__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2% auto;
-  max-width: 67%;
-  height: 800px;
+  max-width: 57%;
+  /* height: 800px; */
   padding: 20px;
   gap: 1rem;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.paginationButton {
+  margin: 5px;
+  padding: 10px 16px;
+  border: none;
+  color: white;
+  background: var(--primary);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* transition-duration: 0.4s; */
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.paginationButton:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
 }

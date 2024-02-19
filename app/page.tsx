@@ -8,6 +8,8 @@ import styles from "./page.module.css";
 const Home = () => {
   const [locations, setLocations] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(4);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,9 +26,20 @@ const Home = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm]);
+
   const filteredLocations = locations.filter((location: any) => {
     return location.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredLocations.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
   return (
     <div>
@@ -41,13 +54,39 @@ const Home = () => {
       </div>
       <div className={styles.main__stuff}>
         <div className={styles.location__wrapper}>
-          {filteredLocations.map((location: any) => (
+          {currentItems.map((location: any) => (
             <LocationCard key={location.id} location={location} />
           ))}
         </div>
-      </div>
-      <div className={styles.footer}>
-        <p>Made with love by Bernard Maina</p>
+        <div className={styles.pagination}>
+          <button
+            onClick={() =>
+              setCurrentPage(currentPage > 1 ? currentPage - 1 : currentPage)
+            }
+            className={styles.paginationButton}
+            disabled={currentPage === 1}
+          >
+            Prev
+          </button>
+          <button
+            onClick={() =>
+              setCurrentPage(
+                currentPage < Math.ceil(filteredLocations.length / itemsPerPage)
+                  ? currentPage + 1
+                  : currentPage
+              )
+            }
+            className={styles.paginationButton}
+            disabled={
+              currentPage === Math.ceil(filteredLocations.length / itemsPerPage)
+            }
+          >
+            Next
+          </button>
+        </div>
+        {/* <div className={styles.footer}>
+          <p>Made with love by Bernard Maina</p>
+        </div> */}
       </div>
     </div>
   );
